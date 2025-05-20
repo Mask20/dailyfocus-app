@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DailyFocus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 DailyFocus</h1>
+    
+    <section id="task-section">
+      <h2>Minhas Tarefas</h2>
+      <input type="text" id="new-task" placeholder="Digite uma tarefa..." />
+      <button onclick="addTask()">Adicionar</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <section id="pomodoro-section">
+      <h2>Pomodoro</h2>
+      <div id="timer">25:00</div>
+      <button onclick="startTimer()">Iniciar</button>
+      <button onclick="resetTimer()">Resetar</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
